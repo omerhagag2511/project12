@@ -24,13 +24,13 @@ public class MainActivity extends AppCompatActivity {
     }
     public void goToggle(View v) {
         if (tb.isChecked() && swDN.isChecked()) {
-            iv.setImageResource(R.drawable.fox);
+            iv.setImageResource(R.drawable.deer);
         }
         else if (tb.isChecked())  {
             iv.setImageResource(R.drawable.mash);
         }
         else if (swDN.isChecked()){
-            iv.setImageResource(R.drawable.wild);
+            iv.setImageResource(R.drawable.swass);
         }
         else{
             iv.setImageResource(R.drawable.bear);
