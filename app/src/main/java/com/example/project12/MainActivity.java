@@ -23,10 +23,17 @@ public class MainActivity extends AppCompatActivity {
         iv = (ImageView) findViewById(R.id.iv);
     }
     public void goToggle(View v) {
-        if (tb.isChecked()) {
-
-        } else {
-
+        if (tb.isChecked() && swDN.isChecked()) {
+            iv.setImageResource(R.drawable.fox);
+        }
+        else if (tb.isChecked())  {
+            iv.setImageResource(R.drawable.mash);
+        }
+        else if (swDN.isChecked()){
+            iv.setImageResource(R.drawable.wild);
+        }
+        else{
+            iv.setImageResource(R.drawable.bear);
         }
     }
 }
